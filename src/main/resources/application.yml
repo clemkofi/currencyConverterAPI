@@ -1,0 +1,23 @@
+# app:
+#     datasource:
+#         jdbc-url: jdbc:postgresql://localhost:5432/springCurrency
+#         username: postgres
+#         password: muriel2016
+#         pool-size: 30  currencyconverter.cd3lnzoooh9u.eu-central-1.rds.amazonaws.com
+
+server:
+    port: 5000 RDS_DATABASE_USERNAME
+
+# app:
+#     datasource:
+#         jdbc-url: jdbc:postgresql://currencyconverterdb.cd3lnzoooh9u.eu-central-1.rds.amazonaws.com:5432/springCurrency
+#         username: postgres
+#         password: Muriel2016!
+#         pool-size: 30
+
+app:
+    datasource:
+        jdbc-url: ${RDS_DATABASE}
+        username: ${RDS_DATABASE_USERNAME}
+        password: ${RDS_DATABASE_PASSWORD}
+        pool-size: 30
